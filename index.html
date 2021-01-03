@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rigel developers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="home_page">
+            <header>
+                <a href="#" class="logo">rigel developers</a>
+                <nav>
+                    <i class="fa fa-bars" id="ham-icon" style="color: white; font-size:36px" onclick="show()"></i>
+                    <ul id="nav-area" class="not">
+                        <div class="cross">
+                            <i class="fa fa-times" id="cross-icon" style="color: white; font-size:45px;"
+                                onclick="hide()"></i>
+                        </div>
+                        <li><a href="#home" id="home-nav" onclick="hide()">Home</a></li>
+                        <li><a href="#about" id="services-nav" onclick="hide()">About</a></li>
+                        <li><a href="#sevices" id="about-nav" onclick="hide()">Services</a></li>
+                        <li><a href="#work" id="work-nav" onclick="hide()">Work</a></li>
+                        <li><a href="#contact" id="contact-nav" onclick="hide()">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="mainbg" id="home">
+                <div class="img">
+                    <img src="/images/skill.png">
+                </div>
+                <div class="main">
+                    <h1>welcome</h1>
+                    <span>rigel developers</span>
+                    <h3>we build! we innovate!</h3>
+                    <a href="#sevices" class="btn1">explore</a>
+                </div>
+            </section>
+        </div>
+
+        <section class="about" id="about">
+            <div class="heading">
+                <h2>About-us</h2>
+                <hr class="divider2">
+            </div>
+            <div class="content">
+                <div class="cont-info">
+                    <h1>we are the developers of future technology.</h1>
+                    <p>We are a team of experts in developing Websites , Application, Wordpress websites,
+                        Games. We also edit pictures and videos.
+                        we provide support also for the produicts after their delivary.
+                        we use modern technology and Frameworks. we also insure the efficiency and speed of websites and
+                        other products. </p>
+                    <h3>Always code as if the guy who ends up maintaining your code will be a violent psychopath who
+                        knows where you live.
+                        <br>--Martin Golding
+                    </h3>
+                </div>
+                <div class="pic">
+                    <img src="images/about-us.png" class="img">
+                </div>
+
+        </section>
+        <section class="services" id="sevices">
+            <div class="heading">
+                <h2>Our services</h2>
+                <hr class="divider2">
+                <h4>" We provide innovation using technology! " </h4>
+            </div>
+            <div class="contn">
+                <div class="card">
+                    <div class="face_top">
+                        <div class="contents">
+                            <img src="/images/android.png">
+                            <h3>Application Development</h3>
+                        </div>
+                    </div>
+                    <div class="face_bottom">
+                        <p>we develop android application using android studio,ionic framework.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face_top">
+                        <div class="contents">
+                            <img src="/images/programming.png">
+                            <h3>Website Development</h3>
+                        </div>
+                    </div>
+                    <div class="face_bottom">
+                        <p>we develops websites using html, css, and java script,and django as backend.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face_top">
+                        <div class="contents">
+                            <img src="/images/video-game.png">
+                            <h3>Game Development</h3>
+                        </div>
+                    </div>
+                    <div class="face_bottom">
+                        <p>we develops games also multiplayer or single as per your requirement.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face_top">
+                        <div class="contents">
+                            <img src="/images/wordpress-logo.png">
+                            <h3>Wordpress websites Development</h3>
+                        </div>
+                    </div>
+                    <div class="face_bottom">
+                        <p>we develop websites using worpdress, we devlop wooComerce site ,blog site.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face_top">
+                        <div class="contents">
+                            <img src="/images/photo.png">
+                            <h3>photo editing</h3>
+                        </div>
+                    </div>
+                    <div class="face_bottom">
+                        <p>we also edits pictures ,LOGO , photos ,thumbnail as per your requirement.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face_top">
+                        <div class="contents">
+                            <img src="/images/film-editing.png">
+                            <h3>video Editing</h3>
+                        </div>
+                    </div>
+                    <div class="face_bottom">
+                        <p>we also edits videos as per your requirement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work" id="work">
+            <div class="heading">
+                <h2>more UI designes</h2>
+                <hr class="divider2">
+            </div>
+            <div class="main_cont">
+                <div class="left-btn">
+                    <button class="btn" onClick="back()"><img src="/images/Left  arrow.png"></button>
+                </div>
+                <div class="main_img">
+                    <img src="/images/UI_1.png" alt="img" id="mainImg">
+                    <h1 id="h">Home Page</h1>
+                </div>
+                <div class="right-btn">
+                    <button class="btn" onClick="next()"><img src="/images/Right arrow.png" alt="right"></button>
+                </div>
+            </div>
+
+        </section>
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h2>contact-us</h2>
+                <hr class="divider2">
+                <h4>" contact us for hiring or any query. "</h4>
+            </div>
+            <div class="content2">
+                <div class="cont-info2">
+                    <div class="left-box">
+                        <div class="text">
+                            <h1>Address</h1>
+                            <p>andheri west,mumbai, maharashtra-401101</p>
+                        </div>
+                        <div class="text">
+                            <h1>phone</h1>
+                            <p>+91-999999999</p>
+                        </div>
+                        <div class="text">
+                            <h1>email</h1>
+                            <p>rigeldevelopers.tech@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <h3>message us</h3>
+                        <form>
+
+                            <input type="text" placeholder="full name">
+
+                            <input type="email" placeholder="your email">
+                            <textarea placeholder="project discription"></textarea>
+                            <input type="submit" value="send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="copyright">
+                <h1>copyright@rigeldevelopers2020</h1>
+            </div>
+        </section>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+    </script>
+    <script>
+
+        var myImg = document.getElementById('mainImg');
+        var array2 = ["/images/UI_1.png", "/images/UI_2.png", "/images/ui-3.png"];
+        var imgIndex = 0;
+        function next() {
+            if (imgIndex < array2.length - 1) {
+                imgIndex++;
+            }
+            else {
+                imgIndex = 0;
+            }
+            myImg.setAttribute("src", array2[imgIndex]);
+        }
+        function back() {
+
+            console.log('img number', imgIndex);
+            if (imgIndex < array2.length - 1) {
+                imgIndex++;
+            }
+            else {
+                imgIndex = 0;
+
+            }
+            myImg.setAttribute("src", array2[imgIndex]);
+        }
+
+    </script>
+
+    <script>
+        
+        function show() {
+            var element = document.getElementById("nav-area");
+            element.classList.remove("not");
+            element.classList.add("active");
+
+        }
+        function hide() {
+            var element = document.getElementById("nav-area");
+            element.classList.remove("active");
+            element.classList.add("not");
+
+        }
+    </script>
+</body>
+
+</html>
